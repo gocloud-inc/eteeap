@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo-academe-sms.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header id="header">
+            <nav>
+                <div class="d-flex align-items-center gap-1">
+                    <button type="button" class="button-link-dark circle" id="sidebar-toggler">
+                        <span class="material-symbols-rounded">menu</span>
+                    </button>
+                    <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
+                        <span class="brand-name">ETEEAP Registration Form</span>
+                    </a>
+                </div>
+                <ul class="navmenu">
+                    <li class="nav-item">
+                        <a href="create-class.html" class="button-secondary round">
+                            <span class="material-icons-outlined font-size-20">call</span>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside id="aside">
+            <ul class="side-menu">
+                <li class="side-item">
+                    <a class="side-link" href="index.html">
+                        <span class="material-symbols-rounded">dashboard</span>
+                        <span class="side-text">Home</span>
+                    </a>
+                </li>
+                <li class="side-item-header">Workspaces</li>
+                <li class="side-item">
+                    <a class="side-link" href="non-disclosure-agreement.html">
+                        <div class="background-accent-success rounded-4 py-2 px-2">
+                            <img src="assets/icons/system-portal.png" height="20" alt="">
+                        </div>
+                        <span class="side-text">Non-Disclosure Agreement (NDA)</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link active" href="subjects-for-crediting.html">
+                        <div class="background-accent-success rounded-4 py-2 px-2">
+                            <img src="assets/icons/student-portal.png" height="20" alt="">
+                        </div>
+                        <span class="side-text">Student Registration Form</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="list-of-schools-and-programs.html">
+                        <div class="background-accent-success rounded-4 py-2 px-2">
+                            <img src="assets/icons/admission-portal.png" height="20" alt="">
+                        </div>
+                        <span class="side-text">List of Schools & Programs</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="list-of-requirements-and-fees.html">
+                        <div class="background-accent-success rounded-4 py-2 px-2">
+                            <img src="assets/icons/new-student-registration.png" height="20" alt="">
+                        </div>
+                        <span class="side-text">List of Requirements & Fees</span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="subjects-for-crediting.html">
+                        <div class="background-accent-success rounded-4 py-2 px-2">
+                            <img src="assets/icons/continuing-student.png" height="20" alt="">
+                        </div>
+                        <span class="side-text">Subjects for Crediting</span>
+                    </a>
+                </li>
+                <li class="side-item-header">Preferences</li>
+                <li class="side-item">
+                    <a class="side-link theme-btn-switcher" href="#">
+                        <span class="material-symbols-rounded theme-icon-switcher">dark_mode</span>
+                        <span class="side-text theme-text-switcher">Dark Mode</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="container">
+                <div class="row justify-content-center g-5">
+                    <div class="col-xl-7">
+                        <div class="bread">
+                            <ol class="bread-menu">
+                                <li class="bread-item">
+                                    <a href="index.html" class="bread-link">Home</a>
+                                </li>
+                                <li class="bread-item">
+                                    <span class="bread-link" aria-current="page">Registration</span>
+                                </li>
+                            </ol>
+                            <h4>Student Registration Form</h4>
+                            <p class="mb-0">Please type or clearly print your answers to all questions. Provide complete and detailed information required by the questionnaire. All the declarations that you make are under oath. Discovery of any false claim in this application form will disqualify you from participating in the program.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-5 col-md-7">
+                        <form action="" class="form">
+                            <div class="row g-4">
+                                <div class="col-xl-12">
+                                    <div class="font-size-18 font-weight-600">Personal Information</div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Name</label>
+                                        <div class="row g-4">
+                                            <div class="col-xl-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-input-lg" placeholder="First Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-input-lg" placeholder="Middle Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control form-input-lg" placeholder="Last Name" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control form-input-lg" placeholder="e.g example@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Phone Number</label>
+                                        <input type="number" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Birthdate</label>
+                                        <input type="date" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Street Address</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">City</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">State / Province</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Postal / Zip Code</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Please upload your photo</label>
+                                        <input type="file" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="font-size-18 font-weight-600 mt-4">Educational Background</div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Highest Educational Attainment</label>
+                                        <select class="form-control form-input-lg" required>
+                                            <option value="High School Graduate">High School Graduate</option>
+                                            <option value="College Level">College Level</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Year Level (for college level)</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Course</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Major</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">School / University Last Attended</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="font-size-18 font-weight-600 mt-4">Job Information</div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Company Name</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Position</label>
+                                        <input type="text" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="form-group">
+                                        <label for="label" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control form-input-lg" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <button type="button" class="button-link-dark md clear-form"><span class="material-icons-outlined">refresh</span>Clear Entry</button>
+                                    <button type="submit" class="button-primary md float-end">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

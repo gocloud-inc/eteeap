@@ -1,0 +1,13 @@
+.accordion {
+    .accordion-item {
+        background-color: var(--color-card);
+        border-color: rgba(var(--color-dark-rgb), 0.1);
+
+        .accordion-header {
+            .accordion-button {
+                background-color: var(--color-card);
+                color: var(--color-dark);
+            }
+        }
+    }
+}

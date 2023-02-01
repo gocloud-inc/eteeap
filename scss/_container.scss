@@ -1,0 +1,18 @@
+%container-default {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    @extend %container-default;
+
+    @media (min-width: 768px) {
+        min-width: 768px;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    @extend %container-default;
+}
