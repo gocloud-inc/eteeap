@@ -189,3 +189,8 @@ a {
 .solid-border {
     border: 1px solid rgba(var(--color-dark-rgb), 0.1);
 }
+
+// Z-indexing
+.z-index-0 {
+    z-index: 0;
+}
