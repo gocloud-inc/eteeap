@@ -19,91 +19,64 @@
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <header id="header">
-            <nav>
-                <div class="d-flex align-items-center gap-1">
-                    <button type="button" class="button-link-dark circle" id="sidebar-toggler">
-                        <span class="material-symbols-rounded">menu</span>
-                    </button>
-                    <a href="index.html" class="d-flex align-items-center gap-2" id="school-logo">
-                        <span class="brand-name">ETEEAP Registration Form</span>
-                    </a>
-                </div>
-                <ul class="navmenu">
-                    <li class="nav-item">
-                        <a href="create-class.html" class="button-secondary round">
-                            <span class="material-icons-outlined font-size-20">call</span>
-                            Contact Us
+    <div id="application-form">
+        <div class="left-wrapper">
+            <div class="application-journey-container">
+                <div class="font-size-24 font-weight-500 mb-3">Application Process</div>
+                <p>Expanded Tertiary Education Equivalency and Accreditation Program (ETEEAP)</p>
+                <ul class="list-style-none p-0 d-grid gap-3 pt-3">
+                    <li>
+                        <a href="#" class="d-flex gap-3 background-color-card solid-border p-3 rounded-3">
+                            <div class="initial-circle-sm background-accent-success rounded-4 py-2 px-2">
+                                <span class="material-icons-round text-color-success">check_circle</span>
+                            </div>
+                            <div class="me-auto">
+                                <div class="font-size-14 font-weight-500 text-color-medium">Step 1</div>
+                                <div class="font-size-18 font-weight-600">Student Registration Form</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex gap-3 background-color-card solid-border p-3 rounded-3">
+                            <div class="initial-circle-sm background-accent-success rounded-4 py-2 px-2">
+                                <span class="material-icons-round text-color-success">check_circle</span>
+                            </div>
+                            <div class="me-auto">
+                                <div class="font-size-14 font-weight-500 text-color-medium">Step 2</div>
+                                <div class="font-size-18 font-weight-600">Programs Offerings</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex gap-3 background-color-card scale-1 solid-border p-3 rounded-3">
+                            <div class="initial-circle-sm background-accent-medium rounded-4 py-2 px-2">
+                                <span class="material-icons-outlined text-color-medium">check_circle</span>
+                            </div>
+                            <div class="me-auto">
+                                <div class="font-size-14 font-weight-500 text-color-medium">Step 3</div>
+                                <div class="font-size-16 font-weight-600">Crendential Lists</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="d-flex gap-3 background-color-card solid-border p-3 rounded-3">
+                            <div class="initial-circle-sm background-accent-medium rounded-4 py-2 px-2">
+                                <span class="material-icons-outlined text-color-medium">check_circle</span>
+                            </div>
+                            <div class="me-auto">
+                                <div class="font-size-14 font-weight-500 text-color-medium">Step 4</div>
+                                <div class="font-size-16 text-color-medium font-weight-500">Payment and Assessment</div>
+                            </div>
                         </a>
                     </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
 
-        <aside id="aside">
-            <ul class="side-menu">
-                <li class="side-item">
-                    <a class="side-link" href="index.html">
-                        <span class="material-symbols-rounded">dashboard</span>
-                        <span class="side-text">Home</span>
-                    </a>
-                </li>
-                <li class="side-item-header">Workspaces</li>
-                <li class="side-item">
-                    <a class="side-link" href="non-disclosure-agreement.html">
-                        <div class="background-accent-success rounded-4 py-2 px-2">
-                            <img src="assets/icons/system-portal.png" height="20" alt="">
-                        </div>
-                        <span class="side-text">Non-Disclosure Agreement (NDA)</span>
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a class="side-link" href="student-registration-form.html">
-                        <div class="background-accent-success rounded-4 py-2 px-2">
-                            <img src="assets/icons/student-portal.png" height="20" alt="">
-                        </div>
-                        <span class="side-text">Student Registration Form</span>
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a class="side-link" href="list-of-schools-and-programs.html">
-                        <div class="background-accent-success rounded-4 py-2 px-2">
-                            <img src="assets/icons/admission-portal.png" height="20" alt="">
-                        </div>
-                        <span class="side-text">List of Schools & Programs</span>
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a class="side-link active" href="list-of-requirements-and-fees.html">
-                        <div class="background-accent-success rounded-4 py-2 px-2">
-                            <img src="assets/icons/new-student-registration.png" height="20" alt="">
-                        </div>
-                        <span class="side-text">List of Requirements & Fees</span>
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a class="side-link" href="subjects-for-crediting.html">
-                        <div class="background-accent-success rounded-4 py-2 px-2">
-                            <img src="assets/icons/continuing-student.png" height="20" alt="">
-                        </div>
-                        <span class="side-text">Subjects for Crediting</span>
-                    </a>
-                </li>
-                <li class="side-item-header">Preferences</li>
-                <li class="side-item">
-                    <a class="side-link theme-btn-switcher" href="#">
-                        <span class="material-symbols-rounded theme-icon-switcher">dark_mode</span>
-                        <span class="side-text theme-text-switcher">Dark Mode</span>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-
-        <main>
+        <div class="right-wrapper">
             <div class="container">
                 <div class="row justify-content-center g-5">
-                    <div class="col-xl-7">
+                    <div class="col-xl-12">
                         <div class="bread">
                             <ol class="bread-menu">
                                 <li class="bread-item">
@@ -113,10 +86,10 @@
                                     <a href="list-of-schools-and-programs.html" class="bread-link">Schools and Program Offerings</a>
                                 </li>
                             </ol>
-                            <h4>List of Requirements and Application Fees</h4>
+                            <h4>Step3: List of Requirements and Application Fees</h4>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-lg-5 col-md-7">
+                    <div class="col-xl-12">
                         <form action="" class="form">
                             <div class="row g-4">
                                 <div class="col-xl-12">
@@ -269,7 +242,7 @@
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
