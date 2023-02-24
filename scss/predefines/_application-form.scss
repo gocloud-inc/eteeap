@@ -7,10 +7,26 @@
     grid-template-areas:
         "left-wrapper right-wrapper";
 
+    @include md {
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+    
+    @include sm {
+        padding: 1.5rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "left-wrapper left-wrapper"
+            "right-wrapper right-wrapper";
+    }
+    
     .left-wrapper { 
         grid-area: left-wrapper; 
         background-color: rgba(var(--color-dark-rgb), 0.01);
         padding: 2rem;
+        
+        @include sm {
+            padding: 0;
+        }
 
         .application-journey-container {
             position: sticky;
@@ -21,6 +37,14 @@
     .right-wrapper { 
         grid-area: right-wrapper; 
         padding: 2rem 7rem;
+
+        @include md {
+            padding: 2rem 3rem;
+        }
+
+        @include sm {
+            padding: 2rem 0;
+        }
     }
 
     .bread {
