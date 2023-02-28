@@ -22,8 +22,7 @@
     
     .left-wrapper { 
         grid-area: left-wrapper; 
-        background-color: var(--color-dark);
-        color: var(--color-dark-contrast);
+        background-color: rgba(var(--color-dark-rgb), 0.02);
         padding: 2rem;
         
         @include sm {
