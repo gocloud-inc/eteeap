@@ -19,6 +19,31 @@ document.addEventListener('turbolinks:load', () => {
         });
     }
 
+    // Password Visibility
+    let passwordEl = document.querySelectorAll('.password');
+    let passwordBtn = document.querySelectorAll('.password-btn');
+    let passwordIcon = document.querySelectorAll('.password-icon');
+
+    if (passwordBtn) {
+        passwordBtn.forEach((index) => {
+            index.addEventListener('click', () => {
+                passwordEl.forEach((passwordIndex) => {
+                    if (passwordIndex.type === 'password') {
+                        passwordIndex.type = 'text';
+                        passwordIcon.forEach((passwordIconIndex) => {
+                            passwordIconIndex.innerHTML = 'visibility_off';
+                        });
+                    } else {
+                        passwordIndex.type = 'password';
+                        passwordIcon.forEach((passwordIconIndex) => {
+                            passwordIconIndex.innerHTML = 'visibility';
+                        });
+                    }
+                });
+            });
+        })
+    }
+
     let currentStep = 0;
     let form = document.getElementById("myForm");
     if (form) {

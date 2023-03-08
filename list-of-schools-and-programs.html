@@ -234,11 +234,59 @@
                             </div>
                             <div class="col-xl-12 sticky-bottom background-color-card p-3 z-index-0 d-flex justify-content-between gap-2">
                                 <a href="index.html" class="button-accent-medium md"><span class="material-icons-round">arrow_back</span> Previous</a>
-                                <a href="list-of-requirements-and-fees.html" class="button-primary md float-end">Save and Continue <span class="material-icons-round">arrow_forward</span></a>
+                                <button type="button" class="button-primary md float-end" data-bs-toggle="modal" data-bs-target="#payment">Proceed to payment</button>
                             </div>
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <form action="">
+                    <div class="modal-body p-4">
+                        <button type="button" class="button-accent-medium circle position-absolute top-0 right-0 m-2" data-bs-dismiss="modal">
+                            <span class="material-icons-outlined">close</span>
+                        </button>
+                        <div class="row g-4">
+                            <div class="col-xl-12">
+                                <div class="font-size-18 font-weight-600 mb-2">Payment Method</div>
+                                <p>Settled your payment fees by selecting your payment type order.</p>
+                                
+                                <div class="d-grid gap-2">
+                                    <div class="border background-color-card py-2 px-2 rounded-4 d-flex align-items-center justify-content-between gap-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="initial-circle-md background-accent-dark round p-3">
+                                                <img src="assets/logo/atm-card.png" width="32" alt="">
+                                            </div>
+                                            <div>
+                                                <div class="font-size-16 font-weight-500">Debit/Credit Card</div>
+                                                <div class="font-size-13">Pay with your most trusted debit/credit card.</div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="button-primary round floatn-end">Pay now</button>
+                                    </div>
+                                    <div class="border background-color-card py-2 px-2 rounded-4 d-flex align-items-center justify-content-between gap-3">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="initial-circle-md background-accent-dark round p-3">
+                                                <img src="assets/logo/paypal.png" width="32" alt="">
+                                            </div>
+                                            <div>
+                                                <div class="font-size-16 font-weight-500">Paypal</div>
+                                                <div class="font-size-13">Pay with the world's most popular payment method.</div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="button-primary round floatn-end">Pay now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

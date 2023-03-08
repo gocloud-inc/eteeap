@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Academe LMS | College of Our Lady of Mt. Carmel</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/colmc.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left-wrapper">
+            <div class="row justify-content-center g-2">
+                <div class="col-xl-9">
+                    <div class="font-size-32 font-weight-600 mb-2">Login to your account</div>
+                    <p class="font-size-16 text-color-medium font-weight-500">Welcome back! Please enter your details.</p>
+                </div>
+                <div class="col-xl-9">
+                    <form action="">
+                        <div class="row g-4 mt-2">
+                            <div class="col-xl-12">
+                                <div class="form">
+                                    <label for="username" class="form-label">Email</label>
+                                    <input type="text" class="form-control form-input-lg" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="form">
+                                    <div class="display-flex align-items-center justify-content-between">
+                                        <label for="password" class="form-label">Password</label>
+                                        <a href="forgot-password.html" class="font-size-14 font-weight-600">Forgot your password?</a>
+                                    </div>
+                                    <div class="position-relative">
+                                        <input type="password" class="form-control form-input-lg password" placeholder="Password" required>
+                                        <a href="javascript:void(0);" class="button-link-dark circle position-absolute top-0 right-0 my-2 mx-2 password-btn">
+                                            <span class="material-icons-outlined password-icon">visibility</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="form-check d-flex align-items-center gap-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <button type="submit" class="button-dark md round block">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="auth-right-wrapper" style="background-image: url('assets/auth-banner.png');">
+            <div class="cta-wrapper">
+                <div class="font-size-48 font-weight-800 mt-1 lh-sm">A Smarter Way to Earn Your Degree with ETEEAP</div>
+                <p class="font-size-24 py-2">Expanded Tertiary Education Equivalency and Accreditation Program (ETEEAP)</p>
+                <button type="button" class="button-light md round" data-bs-toggle="modal" data-bs-target="#enrollmentGuidelines">
+                    Enrollment Guide
+                </button>
+                <a href="signup.html" class="button-primary md round mx-2">Create an account <span class="material-icons-round">arrow_forward</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enrollment Guidelines Modal -->
+    <div class="modal fade" id="enrollmentGuidelines" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="paymentLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-5">
+                    <button type="button" class="button-accent-medium circle position-absolute top-0 right-0 m-2" data-bs-dismiss="modal">
+                        <span class="material-icons-outlined">close</span>
+                    </button>
+                    <div class="text-center my-4">
+                        <div class="font-size-40 font-weight-600 lh-sm">Online Education Enrollment Guide</div>
+                        <p class="font-size-18">This guide will make your admission and enrollment easier and faster.</p>
+                    </div>
+                    <ul class="list-style-none p-0 d-grid gap-2 pt-3">
+                        <li>
+                            <div class="d-xl-flex d-md-grid d-flex align-items-center gap-3 background-color-card solid-border p-3 rounded-3">
+                                <div class="initial-circle-md background-accent-medium rounded-4 py-2 px-2">
+                                    <span class="material-icons-outlined">create</span>
+                                </div>
+                                <div class="me-auto">
+                                    <div class="font-size-14 font-weight-600">Step 1</div>
+                                    <div class="font-size-16 font-weight-500">Application Form</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-xl-flex d-md-grid d-flex align-items-center gap-3 background-color-card solid-border p-3 rounded-3">
+                                <div class="initial-circle-md background-accent-danger rounded-4 py-2 px-2">
+                                    <span class="material-icons-outlined">school</span>
+                                </div>
+                                <div class="me-auto">
+                                    <div class="font-size-14 font-weight-600">Step 2</div>
+                                    <div class="font-size-16 font-weight-500">Selection of Schools</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-xl-flex d-md-grid d-flex align-items-center gap-3 background-color-card solid-border p-3 rounded-3">
+                                <div class="initial-circle-md background-accent-warning rounded-4 py-2 px-2">
+                                    <span class="material-icons-outlined">ballot</span>
+                                </div>
+                                <div class="me-auto">
+                                    <div class="font-size-14 font-weight-600">Step 3</div>
+                                    <div class="font-size-16 font-weight-500">List of Requirements</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-xl-flex d-md-grid d-flex align-items-center gap-3 background-color-card solid-border p-3 rounded-3">
+                                <div class="initial-circle-md background-accent-tertiary rounded-4 py-2 px-2">
+                                    <span class="material-icons-outlined">assessment</span>
+                                </div>
+                                <div class="me-auto">
+                                    <div class="font-size-14 font-weight-600">Step 4</div>
+                                    <div class="font-size-16 font-weight-500">Pre-Assessment</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-xl-flex d-md-grid d-flex align-items-center gap-3 background-color-card solid-border p-3 rounded-3">
+                                <div class="initial-circle-md background-accent-success rounded-4 py-2 px-2">
+                                    <span class="material-icons-outlined">check</span>
+                                </div>
+                                <div class="me-auto">
+                                    <div class="font-size-14 font-weight-600">Step 5</div>
+                                    <div class="font-size-16 font-weight-500">Acceptance</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-xl-flex d-md-grid d-flex align-items-center gap-3 background-color-card solid-border p-3 rounded-3">
+                                <div class="initial-circle-md background-accent-primary rounded-4 py-2 px-2">
+                                    <span class="material-icons-outlined">grade</span>
+                                </div>
+                                <div class="me-auto">
+                                    <div class="font-size-14 font-weight-600">Step 6</div>
+                                    <div class="font-size-16 font-weight-500">Assessment on Competencies</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
