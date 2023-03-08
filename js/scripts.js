@@ -79,4 +79,39 @@ document.addEventListener('turbolinks:load', () => {
     
         showStep(0);
     }
+
+    // Sidebar
+    let sidebarToggler = document.getElementById('sidebar-toggler');
+    let asideEl = document.getElementById('aside');
+
+    if (sidebarToggler) {
+        sidebarToggler.addEventListener('click', () => {
+            asideEl.classList.add('show-aside');
+            asideEl.classList.remove('hide-aside');
+
+            let asideDivOverlay = document.createElement('div');
+        
+            asideDivOverlay.className = 'shadow-overlay'; 
+            document.getElementsByTagName('body')[0].appendChild(asideDivOverlay);
+
+            asideDivOverlay.addEventListener('click', () => {
+                asideEl.classList.add('hide-aside');
+                document.getElementsByTagName('body')[0].removeChild(asideDivOverlay);
+            });
+        
+        });
+    }
+
+    // Sidebar has-children Class
+    function ToggleMenu(event) {
+        event.stopPropagation();
+        if (event.target.firstElementChild) {
+            event.target.classList.toggle('active');
+        }
+    }
+
+    let menuParents = document.querySelectorAll(".side-menu .side-item .side-link");
+    menuParents.forEach(menuParent => {
+        menuParent.parentElement.addEventListener("click", ToggleMenu);
+    })
 });
