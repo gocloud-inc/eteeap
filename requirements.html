@@ -20,9 +20,36 @@
 </head>
 <body>
     <div id="application-form">
+        <header class="header">
+            <nav>
+                <button type="button" class="button-link-dark circle" id="sidebar-toggler">
+                    <span class="material-icons-outlined">menu</span>
+                </button>
+                <a href="student-portal.html" class="d-flex align-items-center gap-2" id="school-logo">
+                    <span class="material-icons-outlined">create</span>
+                    <div class="font-size-18 font-weight-600">ETEEAP | Application Form</div>
+                </a>
+                <ul class="navmenu">
+                    <li class="nav-item">
+                        <div class="badge background-color-primary round d-flex align-items-center gap-1 px-2 py-1">
+                            <span class="material-icons-outlined">person</span> Applicant
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a role="button" class="d-flex align-items-center gap-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="initial-circle-xs background-color-warning">J</div>
+                            <div class="font-size-14 font-weight-600 nav-username">Jhoaquin James S. Abad</div>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html"><span class="material-icons-outlined">logout</span>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <div class="left-wrapper">
             <div class="application-journey-container">
-                <div class="font-size-32 font-weight-600 mb-1">Application Process</div>
+                <div class="font-size-24 font-weight-600 mb-1">Application Process</div>
                 <p>Expanded Tertiary Education Equivalency and Accreditation Program (ETEEAP)</p>
                 <ul class="list-style-none p-0 d-grid gap-2 pt-3">
                     <li>

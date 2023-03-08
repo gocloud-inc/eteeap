@@ -2,10 +2,10 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 0.6fr 1.4fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.2fr 1.8fr;
     grid-auto-flow: row;
     grid-template-areas:
+        "header header"
         "left-wrapper right-wrapper";
 
     @include md {
@@ -19,11 +19,81 @@
             "left-wrapper left-wrapper"
             "right-wrapper right-wrapper";
     }
+
+    .header { 
+        grid-area: header;
+        background: var(--color-card);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        position: fixed;
+        top: 0; 
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 60px;
+        width: 100%;
+        z-index: 3;
+        
+        nav {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            grid-gap: 0.6rem;
+            width: 100%;
+
+            @media (max-width: 1024px) {
+                grid-template-columns: auto 1fr auto ;
+            }
+
+            @media (max-width: 600px) {
+                grid-template-columns: 1fr auto ;
+            }
+
+            #sidebar-toggler {
+                display: none;
+
+                @media (max-width: 1024px) {
+                    display: flex;
+                }
+            }
+
+            #school-logo {
+                @media (max-width: 600px) {
+                    display: none !important;
+                }
+
+                .brand-logo {
+                    width: 32px;
+                }
+            }
+            
+
+            .navmenu {
+                margin: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .nav-sm-none {
+                    @media (max-width: 600px) {
+                        display: none;
+                    }
+                }
+
+                .nav-username {
+                    @media (max-width: 1024px) and (min-width: 300px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     
     .left-wrapper { 
         grid-area: left-wrapper; 
         background-color: rgba(var(--color-dark-rgb), 0.02);
         padding: 2rem;
+        margin-top: 4rem;
         
         @include sm {
             padding: 0;
@@ -31,13 +101,14 @@
 
         .application-journey-container {
             position: sticky;
-            top: 32px;
+            top: 100px;
         }
     }
     
     .right-wrapper { 
         grid-area: right-wrapper; 
         padding: 2rem 7rem;
+        margin-top: 4rem;
 
         @include md {
             padding: 2rem 3rem;
