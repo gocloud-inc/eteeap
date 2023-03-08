@@ -96,17 +96,6 @@
                             </div>
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="d-xl-flex d-md-grid d-flex gap-3 background-accent-secondary solid-border p-3 rounded-3">
-                            <div class="initial-circle-sm background-accent-medium rounded-4 py-2 px-2">
-                                <span class="material-icons-outlined">check</span>
-                            </div>
-                            <div class="me-auto">
-                                <div class="font-size-14 font-weight-500">Step 5</div>
-                                <div class="font-size-16 font-weight-500">Submission of Requirements</div>
-                            </div>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -149,10 +138,6 @@
                                                 <div class="font-weight-500">II. Initial Assessment Fee</div>
                                                 <div class="font-weight-600">PHP 10,000.00</div>
                                             </li>
-                                            <li class="d-flex justify-content-between">
-                                                <div class="font-weight-500">IV. Tutorial Fee</div>
-                                                <div class="font-weight-600">PHP 5,000 / Course</div>
-                                            </li>
                                         </ul>
                                         <!-- <table class="table table-bordered font-weight-500">
                                             <thead>
@@ -189,7 +174,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-12 sticky-bottom background-color-card p-3 z-index-0 d-flex justify-content-between gap-2">
-                                <a href="list-of-requirements-and-fees.html" class="button-accent-medium md"><span class="material-icons-round">arrow_back</span> Previous</a>
+                                <a href="schedule.html" class="button-accent-medium md"><span class="material-icons-round">arrow_back</span> Previous</a>
                                 <button type="button" class="button-primary md float-end" data-bs-toggle="modal" data-bs-target="#payment">Proceed to payment <span class="material-icons-round">arrow_forward</span></button>
                             </div>
                         </div>
@@ -241,7 +226,41 @@
                                 </div>
                             </div>
                             <div class="col-xl-12">
-                                <a href="requirements.html" class="button-primary md float-end">Pay and Continue <span class="material-icons-round">arrow_forward</span></a>
+                                <button type="button" class="button-primary md float-end" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#emailForEvaluation">Pay and Continue <span class="material-icons-round">arrow_forward</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email For Evaluation Modal -->
+    <div class="modal fade" id="emailForEvaluation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="emailForEvaluationLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <form action="">
+                    <div class="modal-body p-4">
+                        <button type="button" class="button-accent-medium circle position-absolute top-0 right-0 m-2" data-bs-dismiss="modal">
+                            <span class="material-icons-outlined">close</span>
+                        </button>
+                        <div class="row g-4">
+                            <div class="col-xl-12">
+                                <div class="font-size-18 font-weight-600 mb-2">Emailed Schedule for Assessment and Evaluation</div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="background-accent-success round py-4 px-4 d-flex align-items-start gap-3 shadow-sm">
+                                    <div class="initial-circle-md circle background-color-success">
+                                        <span class="material-symbols-rounded">check</span>
+                                    </div>
+                                    <div class="me-auto">
+                                        <div class="font-size-20 font-weight-600">Success</div>
+                                        <div class="font-size-16">We are pleased to inform you that we have received your request for an assessment and evaluation for the [program name] through email. Please ensure that you arrive on time and bring all the necessary documents and requirements on the day of your assessment. If you have any questions or concerns, please do not hesitate to contact us through email [email] or phone [phone].</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <a href="student-portal.html" class="button-primary md float-end">Close and Continue <span class="material-icons-round">arrow_forward</span></a>
                             </div>
                         </div>
                     </div>

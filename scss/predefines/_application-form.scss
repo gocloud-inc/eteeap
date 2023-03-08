@@ -98,10 +98,11 @@
         @include sm {
             padding: 0;
         }
-
+        
         .application-journey-container {
             position: sticky;
             top: 100px;
+            height: 100vh;
         }
     }
     
